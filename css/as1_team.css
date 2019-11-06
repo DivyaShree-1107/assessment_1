@@ -1,0 +1,34 @@
+.para{
+	display: grid;
+	grid-template-columns: 2250px;
+}
+.headin{
+	color: #e91e63;
+    font-size: 19px;
+
+}
+.para_3{
+	font-size: 16px;
+}
+.img_grid{
+	display: grid;
+	grid-template-columns: 250px 250px 250px 250px ;
+ 
+}
+.team_img{
+	height: 260px;
+	width: 230px;
+}
+.names{
+	height: 50px;
+	text-align: center;
+
+}
+.social_icons{
+	display: grid;
+	grid-template-rows: 25px 25px 25px 25px;
+}
+.soc_icon{
+	height: 25px;
+	width: 25px;
+}
