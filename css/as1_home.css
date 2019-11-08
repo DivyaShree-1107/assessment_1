@@ -1,5 +1,5 @@
 .img_cent{
-	padding: 06% 20%;
+	padding: 10% 10%;
     width: 1100px;
     height: 669px;
     opacity: 0.8;
@@ -18,7 +18,7 @@
     color: white;
     margin-top: -389px;
     left: 34%;
-    transform: translate(-2%, -50%);
+    transform: translate(-29%, -50%);
     font-size: 2.3em;
     padding-right: 23px;
    }
@@ -27,10 +27,11 @@
    	color:  #e01a5e;
    }
    .nav_barmain {
-	  overflow: auto; ;
+    margin-top: -10px;
+	  overflow: hidden; ;
 	  position: fixed;
 	  width: 100%;
-	  background-color: white;
+	  background-color: pink;
 	  height: 50px;
 }
    .nav_bar2{
@@ -49,8 +50,8 @@
 .slides {
 
 /*margin-top: 400px;
-*/width:60%;
-height: 400px; 
+*/width:70%;
+height: 600px; 
 margin: 200px;
 }
 .slides-hidden {
@@ -59,13 +60,15 @@ margin-top: 70px;
 }
 .hover_para{
 background-color:#e91e63;
-width:500px;
-height: 400px;
+width:450px;
+height: 300px;
 margin-left:750px;
 margin-top: -300px;
 color: white;
 position: relative;
 font-size: 20px;
+box-shadow: 10px 10px pink;
+border: 20px #e91e63 ; 
 }
 .h5{
 margin-top: 20px;
@@ -75,4 +78,7 @@ margin-right: -100px;
 background-color: red;
 border:2px solid red;
 border-radius: 40px;
+}
+.pointer_img{
+  border-radius: 50%;
 }

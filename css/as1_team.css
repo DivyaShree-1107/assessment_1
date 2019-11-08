@@ -1,18 +1,21 @@
 .para{
 	display: grid;
-	grid-template-columns: 2250px;
+	grid-template-columns: 250px;
+	margin-top: 100px;
 }
 .headin{
 	color: #e91e63;
-    font-size: 19px;
+    font-size: 25px;
 
 }
 .para_3{
-	font-size: 16px;
+	font-size: 19px;
 }
 .img_grid{
 	display: grid;
 	grid-template-columns: 250px 250px 250px 250px ;
+	margin-left: 250px;
+	margin-top: 10px;
  
 }
 .team_img{
@@ -34,7 +37,7 @@
 }
 .container {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .image {

@@ -1,102 +1,33 @@
-			 var hours = new Date().getHours();
-			if(hours<12)
-			document.write("Good Morning User!!!<br />");
-			else if( hours>=12 & hours<16 )
-			document.write("Good Morning User!!!<br />");
-			else if( hours>=20 & hours<16 )
-			document.write("Good Evening User!!!<br />");
-			else 
-			document.write("Good night User!!!<br />");
+	var myDate = new Date();
+var hrs = myDate.getHours();
+var greet;
+if (hrs < 12)
+greet = 'Good Morning User :)';
+else if (hrs >= 12 && hrs <= 17)
+greet = 'Good Afternoon User :)';
+else if (hrs >= 17 && hrs <= 24)
+greet = 'Good Evening User :)';
+document.getElementById("wishes").innerHTML = greet;
 
+
+
+
+var d = new Date();
+document.getElementById("full_time").innerHTML = d;
+
+
+function removeElement(parentDiv, childDiv){
+if (childDiv == parentDiv) {
+alert("The parent div cannot be removed.");
+}
+else if (document.getElementById(childDiv)) { 
+var child = document.getElementById(childDiv);
+var parent = document.getElementById(parentDiv);
+parent.removeChild(child);
+}
+}
 
 		
-
-		document.write(formatAMPM(new Date()));
-
-		function formatAMPM(date) {
-		    var hours = date.getHours();
-		    var days = date.getDay();
-		    var minutes = date.getMinutes();
-		    var ampm = hours >= 12 ? 'pm' : 'am';
-		    hours = hours % 12;
-		    hours = hours ? hours : 12; 
-		    minutes = minutes < 10 ? '0'+ minutes : minutes;
-		    var time = hours + ':' + minutes + ' ' + ampm;
-		    var match = date.toString().match(/\w{3} \w{3} \d{1,2} \d{4}/);
-		    return match[0] + ' ' + time;
-		}
-
-
-
-
-$(function () {
-    var now = new Date();
-
-    $('#demo').mobiscroll().calendar({
-        display: 'inline',
-        layout: 'liquid',
-        theme: 'ios',
-        markedDisplay: 'bottom',
-        marked: [{
-            d: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 6),
-            color: 'rgb(28, 161, 227)'
-        }, {
-            d: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 8),
-            color: 'rgb(28, 161, 227)'
-        }, {
-            d: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 9),
-            color: 'rgb(28, 161, 227)'
-        }, {
-            d: new Date(now.getFullYear(), now.getMonth() + 1, 15),
-            color: 'rgb(28, 161, 227)'
-        }, {
-            d: '11/30',
-            color: 'rgb(163, 0, 38)'
-        }, {
-            d: '5/23',
-            color: 'rgb(163, 0, 38)'
-        }, {
-            d: '3/12',
-            color: 'rgb(163, 0, 38)'
-        }, {
-            d: '14',
-            color: 'rgb(204,204,0)'
-        }, {
-            d: 'w5',
-            color: 'rgb(34, 139, 34)'
-        }, {
-            d: '1/1',
-            color: 'rgb(250,104,0)'
-        }, {
-            d: '1/2',
-            color: 'rgb(250,104,0)'
-        }, {
-            d: '6/4',
-            color: 'rgb(250,104,0)'
-        }, {
-            d: '8/4',
-            color: 'rgb(250,104,0)'
-        }, {
-            d: '12/25',
-            color: 'rgb(250,104,0)'
-        }, {
-            d: '12/26',
-            color: 'rgb(250,104,0)'
-        }]
-    });
-
-    $('.md-marked-list').mobiscroll().listview({
-        theme: 'ios',
-        swipe: false
-    });
-
-});
-
-
-
-
-
-
 function displayCalendar()
 {
 var htmlContent ="";
@@ -150,7 +81,7 @@ if (counter == day){
 htmlContent +="<td class='dayNow' onMouseOver='this.style.background=\"#FF0000\"; this.style.color=\"#FFFFFF\"' "+
 "onMouseOut='this.style.background=\"#FFFFFF\"; this.style.color=\"#00FF00\"'>"+counter+"</td>";
 }else{
-htmlContent +="<td class='monthNow' onMouseOver='this.style.background=\"#FF0000\"'"+
+htmlContent +="<td class='monthNow' onMouseOver='this.style.background=\"pink\"'"+
 " onMouseOut='this.style.background=\"#FFFFFF\"'>"+counter+"</td>"; 
 
 }
@@ -170,20 +101,6 @@ calendarBody += "</tr></table>";
 document.getElementById("calendar").innerHTML=calendarBody;
 
 }
-
-$(document).ready(function(){
-$("#hide2").click(function(){
-$("#hide1").hide();
-});});
-$(document).ready(function(){
-$("#hide4").click(function(){
-$("#hide3").hide();
-});});
-$(document).ready(function(){
-$("#hide6").click(function(){
-$("#hide5").hide();
-});});
-
 
 
 

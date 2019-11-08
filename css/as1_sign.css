@@ -61,10 +61,22 @@ text-align: center;
   display: block;
 }
 #first_button{
-	margin-left: 50%: 
+	margin-left: 549px;
 }
 .dropdown-content a:hover {background-color: #ddd;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
+ 
+ #page_6{
+ 	margin-top: -200px; 
+ }
+
+
+
+
+
+
+
+

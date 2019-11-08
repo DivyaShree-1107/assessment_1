@@ -1,0 +1,43 @@
+.hub{
+	    font-size: 6em;
+	
+}
+.last_page{
+	display: grid;
+	grid-template-columns: 310px;
+	margin-left: 20%;
+	background-color: #c7c2c2; 
+	height: 265px;
+    padding: 47px;
+    border-radius: 12px;
+    margin-left: 215px;
+    margin-right: 191px;
+}
+.hub_title{
+	margin-left: 452px;
+}
+.sign_cont{
+	margin-left: 50px;
+    border-radius: 11px;
+    font-size: 50px;
+}
+.subs{
+	height: 35px;
+    border-radius: 13px;
+    width: 118px;
+    background-color: #61beca;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-left: 80px;
+
+}
+.subs1{
+	height: 35px;
+    border-radius: 13px;
+    width: 118px;
+    background-color: #61beca;
+    font-size: 21px;
+    margin-top:-200%;
+    margin-left: 40%;
+
+}
